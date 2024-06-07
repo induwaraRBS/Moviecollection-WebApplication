@@ -1,0 +1,155 @@
+.Contact-Section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Contact-Section-Header {
+  text-align: left;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.Contact-Content-Section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Contact-Left {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 20px;
+}
+
+.Contact-Left label {
+  color: aliceblue;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Contact-Left input,
+.Contact-Left textarea {
+  background-color: #888;
+  width: 95%;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.Contact-Right {
+  flex: 1;
+}
+
+.Contact-Left .name-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Contact-Left .name-field div {
+  width: 48%;
+}
+
+.Contact-Left span {
+  margin-right: 300px;
+  display: block;
+  font-style: italic;
+  color: #888;
+}
+
+.CheckBox {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.CheckBox span {
+  color: aliceblue;
+  padding-left: 10px;
+  margin-right: 2px;
+}
+
+.CheckBox span a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.Button {
+  padding-left: 10px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .Contact-Section {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .Contact-Content-Section {
+    flex-direction: column;
+  }
+
+  .Contact-Left {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .Contact-Right iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .Contact-Left .name-field {
+    flex-direction: column;
+  }
+
+  .Contact-Left .name-field div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 960px) {
+  .Contact-Section {
+    width: 90%;
+  }
+
+  .Contact-Left {
+    max-width: 100%;
+    padding-right: 10px;
+  }
+
+  .Contact-Right iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .Contact-Left .name-field div {
+    width: 48%;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 961px) {
+  .Contact-Section {
+    width: 80%;
+  }
+
+  .Contact-Left {
+    max-width: 50%;
+  }
+
+  .Contact-Right iframe {
+    width: 100%;
+    height: 450px;
+  }
+
+  .Contact-Left .name-field div {
+    width: 48%;
+  }
+}

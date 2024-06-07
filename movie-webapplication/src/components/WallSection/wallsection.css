@@ -1,0 +1,113 @@
+.WallSection {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.slide-container {
+  height: 600px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.each-fade {
+  position: relative;
+}
+
+.fade-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.WallText {
+  height: 250px;
+  padding: 20px;
+  background-color: rgba(22, 22, 22, 0.705);
+}
+
+.WallText h1 {
+  font-family: 'Ropa Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.WallText p {
+  font-family: 'Ropa Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .slide-container {
+    height: 300px;
+  }
+
+  .fade-image {
+    height: 300px;
+  }
+
+  .WallText {
+    height: auto;
+    padding: 10px;
+  }
+
+  .WallText h1 {
+    font-size: 1.8rem;
+    padding-left: 5%;
+  }
+
+  .WallText p {
+    font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 960px) {
+  .slide-container {
+    height: 450px;
+  }
+
+  .fade-image {
+    height: 450px;
+  }
+
+  .WallText {
+    height: auto;
+    padding: 15px;
+  }
+
+  .WallText h1 {
+    font-size: 2.2rem;
+    padding-left: 7%;
+  }
+
+  .WallText p {
+    font-size: 1.1rem;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 961px) {
+  .WallText h1 {
+    padding-left: 10%;
+  }
+
+  .WallText p {
+    padding-left: 10%;
+    padding-right: 50%;
+  }
+}
